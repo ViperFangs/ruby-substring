@@ -13,8 +13,3 @@ def substrings(word, dictionary)
   return return_hash
 
 end
-
-
-
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-substrings("below", dictionary)
