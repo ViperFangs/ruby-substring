@@ -1,13 +1,16 @@
 def substrings(word, dictionary)
 
-  word_dictionary = dictionary.select{|current_word| word.include?(current_word)}
+  return_hash = dictionary.reduce(Hash.new(0)) do |result, current_word|
+    if word.include?(current_word) 
+      result[current_word] += 1
+    end
 
-  word_dictionary.reduce(Hash.new(0)) do |result, current_word| 
-    result[current_word] += 1
     result
+    
   end
   
-  puts wor
+  puts return_hash
+  return return_hash
 
 end
 
